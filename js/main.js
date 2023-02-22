@@ -1,9 +1,8 @@
 'use strict';
 
 //Dichiarazione variabili
-const btnGenera = document.getElementById('btn-genera');
-
-
+const btnGenera = document.getElementById('submit');
+const bigliettoPersonale = document.getElementById('biglietto-personale');
 
 // variabile prezzo biglietto a km 
 const prezzoAlKm = 0.21;
@@ -16,6 +15,7 @@ btnGenera.addEventListener('click',
         const inputEtaUtente = document.getElementById('fascia-eta').value;
         const inputNomeCognome = document.getElementById('nome-cognome').value;
         let tipoBiglietto =  "Biglietto Standard";
+        const bigliettoPersonale = document.getElementById('biglietto-personale');
 
         // Restituisce un numero intero casuale compreso tra: 
         let nTreno = Math.floor(Math.random() * 99999);
