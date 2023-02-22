@@ -2,20 +2,21 @@
 
 //Dichiarazione variabili
 const btnGenera = document.getElementById('submit');
-const bigliettoPersonale = document.getElementById('biglietto-personale');
 
 // variabile prezzo biglietto a km 
 const prezzoAlKm = 0.21;
 
+// prova variabile a comparsa biglietto 
+let bigliettoPersonale = document.getElementById('biglietto-personale');
+
 // evento del calcolo sul click del bottone 
 btnGenera.addEventListener('click',
-    function(){
+    function () {
         // prendere gli input e inserirli in delle variabili 
         const inputKm = document.getElementById('km-da-percorrere').value;
         const inputEtaUtente = document.getElementById('fascia-eta').value;
         const inputNomeCognome = document.getElementById('nome-cognome').value;
-        let tipoBiglietto =  "Biglietto Standard";
-        const bigliettoPersonale = document.getElementById('biglietto-personale');
+        let tipoBiglietto = "Biglietto Standard";
 
         // Restituisce un numero intero casuale compreso tra: 
         let nTreno = Math.floor(Math.random() * 99999);
@@ -27,16 +28,16 @@ btnGenera.addEventListener('click',
 
         let prezzoBiglietto = inputKm * prezzoAlKm;
         // condizione se minorenne oppure over65 
-        if(inputEtaUtente === 'minorenne'){
+        if (inputEtaUtente === 'minorenne') {
             prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.2;
             tipoBiglietto = "Biglietto giovane";
 
-        }else if(inputEtaUtente  === 'over65'){
+        } else if (inputEtaUtente === 'over65') {
             prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.4;
             tipoBiglietto = "Biglietto piu che adulto";
-        
+
         }
-       
+
         // visualizzazione su console del biglietto e sullo schermo
         console.log(`${prezzoBiglietto.toFixed(2)}€`);
         document.getElementById('prezzo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
@@ -44,6 +45,7 @@ btnGenera.addEventListener('click',
         document.querySelector('.n-treno').innerHTML = nTreno;
         document.querySelector('.n-carrozza').innerHTML = nCarrozza;
         document.querySelector('.tipo-biglietto').innerHTML = tipoBiglietto;
+
     }
 );
 
