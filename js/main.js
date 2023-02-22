@@ -1,9 +1,16 @@
 'use strict';
 
 //Dichiarazione variabili
-const inputElementkm = document.getElementById('km-da-percorrere');
-console.log(inputElementkm.value);
-
+const inputKm = document.getElementById('km-da-percorrere');
+const inputNomeCognome = document.getElementById('nome-cognome');
+const inputMinorenne = document.getElementById('minorenne');
+const inputMaggiorenne = document.getElementById('maggiorenne');
+const inputOver65 = document.getElementById('over65');
+console.log(inputNomeCognome.value);
+console.log(inputKm.value);
+console.log(inputMinorenne.value);
+console.log(inputMaggiorenne.value);
+console.log(inputOver65.value);
 
 
 // // Calcolo biglietto
