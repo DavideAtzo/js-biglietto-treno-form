@@ -11,8 +11,6 @@ body{
 .container{
     max-width: 52.5rem;
     margin: 20px auto;
-    text-align: center;
-    
 }
 
 .row{
@@ -48,10 +46,14 @@ label {
 }
 
 
-h1,
-h2{
-    text-transform: uppercase;
+h1{
     color: white;
+    text-align: center
+}
+
+h1,
+h3{
+    text-transform: uppercase;
     margin-bottom: .625rem;
 }
 
@@ -67,4 +69,22 @@ button{
     padding: .3125rem;
     font-weight: 800;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+#biglietto-personale .box-biglietto{
+    padding: .625rem;
+}
+
+.border{
+    border: .0625rem solid rgba(0, 0, 0, 0.5);
+    border-right: none;
+}
+
+.dett-passeggero{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .625rem;
+}
+
+#biglietto-personale .row div:last-child{
+    margin-right: 1.25rem;
 }
