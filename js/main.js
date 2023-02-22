@@ -14,8 +14,7 @@ let prezzoBiglietto= km * prezzoAlKm;
 
 // variabili sconto del biglietto 
 const minorenne = 18;
-const over65 = 65;22
-
+const over65 = 65;
 
 if(etaUtente < 18)
 prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.2;

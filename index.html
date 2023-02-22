@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,43 @@
     <title>Biglietto treno form</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <main>
         <div class="container">
             <div class="row">
-              <div class="col">
-                <h2>Km utente</h2>
-                <p id="km"></p>
-              </div>
-              <div class="col">
-                <h2>Età</h2>
-                <p id="eta-utente"></p>
-              </div>
-              <div class="col">
-                <h2>Prezzo biglietto</h2>
-                <p id="prezzo-biglietto"></p>
-              </div>
+                <form action="/" method="get">
+                    <div class="col">
+                        <label for="">Nome Cognome</label>
+                        <input type="text">
+                    </div>
+                    <div class="col">
+                        <label for="">Km da percorrere</label>
+                        <input type="number">
+                    </div>
+                    <div class="col">
+                        <label for="fascia-eta">Fascia d'età</label>
+                        <select name="fascia-eta" id="fascia-eta">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over65">Over65</option>
+                        </select>
+                    </div>
+                </form>
             </div>
             <div class="row">
                 <button>Genera</button>
                 <button>Annulla</button>
             </div>
-          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
     </main>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
