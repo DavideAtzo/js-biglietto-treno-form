@@ -30,7 +30,7 @@ btnGenera.addEventListener('click',
         // visualizzazione su console del biglietto e sullo schermo
         console.log(`${prezzoBiglietto.toFixed(2)}€`);
         document.getElementById('prezzo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
-    
+        document.querySelector('.nome-cognome').innerHTML = inputNomeCognome;
     }
 );
 
