@@ -10,13 +10,11 @@ console.log(etaUtente);
 // Calcolo biglietto
 const prezzoAlKm = 0.21;
 let prezzoBiglietto= km * prezzoAlKm;
-console.log(prezzoBiglietto);
+
 
 // variabili sconto del biglietto 
 const minorenne = 18;
-const over65 = 65;
-console.log(minorenne);
-console.log(over65);
+const over65 = 65;22
 
 
 if(etaUtente < 18)
@@ -30,3 +28,4 @@ prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.4;
 document.getElementById('km').innerHTML = km;
 document.getElementById('eta-utente').innerHTML = etaUtente;
 document.getElementById('prezzo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
+console.log(prezzoBiglietto);
