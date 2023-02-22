@@ -1,24 +1,35 @@
 'use strict';
 
 //Dichiarazione variabili
-const inputKm = document.getElementById('km-da-percorrere');
-const inputNomeCognome = document.getElementById('nome-cognome');
+let inputKm = document.getElementById('km-da-percorrere'.value);
+let inputNomeCognome = document.getElementById('nome-cognome'.value);
 const inputMinorenne = document.getElementById('minorenne');
 const inputMaggiorenne = document.getElementById('maggiorenne');
 const inputOver65 = document.getElementById('over65');
-console.log(inputNomeCognome.value);
-console.log(inputKm.value);
-console.log(inputMinorenne.value);
-console.log(inputMaggiorenne.value);
-console.log(inputOver65.value);
+const btnGenera = document.getElementById('btn-genera');
+
+console.log(inputMinorenne);
+console.log(inputMaggiorenne);
+console.log(inputOver65);
+
+const prezzoAlKm = 0.21;
+
+btnGenera.addEventListener('click',
+    function () {
+        inputKm = document.getElementById('km-da-percorrere'.value);
+        inputNomeCognome = document.getElementById('nome-cognome'.value);
+    }
+)
+console.log(inputNomeCognome);
+console.log(inputKm);
 
 
 // // Calcolo biglietto
 // const prezzoAlKm = 0.21;
-// let prezzoBiglietto= km * prezzoAlKm;
+// let prezzoBiglietto= inputKm * prezzoAlKm;
 
 
-// // variabili sconto del biglietto 
+// // variabili sconto del biglietto
 // const minorenne = 18;
 // const over65 = 65;
 
