@@ -16,12 +16,18 @@ const prezzoAlKm = 0.21;
 
 btnGenera.addEventListener('click',
     function () {
-        inputKm = document.getElementById('km-da-percorrere'.value);
-        inputNomeCognome = document.getElementById('nome-cognome'.value);
+        inputKm = document.getElementById('km-da-percorrere').value;
+        inputNomeCognome = document.getElementById('nome-cognome').value;
+       let prezzoBiglietto = inputKm * prezzoAlKm;
+        console.log(prezzoBiglietto);
     }
 )
 console.log(inputNomeCognome);
 console.log(inputKm);
+
+
+// let prezzoBiglietto = inputKm * prezzoAlKm;
+// console.log(prezzoBiglietto);
 
 
 // // Calcolo biglietto
