@@ -14,7 +14,7 @@ btnGenera.addEventListener('click',
         const inputKm = document.getElementById('km-da-percorrere').value;
         const inputEtaUtente = document.getElementById('fascia-eta').value;
         const inputNomeCognome = document.getElementById('nome-cognome').value;
-        let nCarrozza = Math.floor(Math.random() * 99999);
+        let nTreno = Math.floor(Math.random() * 99999);
 
         // visualizzazione su console 
         console.log(inputNomeCognome);
@@ -32,7 +32,7 @@ btnGenera.addEventListener('click',
         console.log(`${prezzoBiglietto.toFixed(2)}€`);
         document.getElementById('prezzo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
         document.querySelector('.nome-cognome').innerHTML = inputNomeCognome;
-        document.querySelector('.n-carrozza').innerHTML = nCarrozza;
+        document.querySelector('.n-treno').innerHTML = nTreno;
     }
 );
 
