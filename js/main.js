@@ -1,32 +1,33 @@
 'use strict';
 
 //Dichiarazione variabili
-let inputKm = document.getElementById('km-da-percorrere').value;
-let inputNomeCognome = document.getElementById('nome-cognome').value;
-let inputEtaUtente = document.getElementById('fascia-eta').value;
 const btnGenera = document.getElementById('btn-genera');
 
 const prezzoAlKm = 0.21;
 
+btnGenera.addEventListener(
+    'click',
+    function(){
+        const inputKm = document.getElementById('km-da-percorrere').value;
+        const inputEtaUtente = document.getElementById('fascia-eta').value;
+        const inputNomeCognome = document.getElementById('nome-cognome').value;
 
-btnGenera.addEventListener('click',
-    function () {
-        inputKm = document.getElementById('km-da-percorrere').value;
-        inputNomeCognome = document.getElementById('nome-cognome').value;
         console.log(inputNomeCognome);
         console.log(inputKm);
+
         let prezzoBiglietto = inputKm * prezzoAlKm;
-        
-        if (inputEtaUtente === 'minorenne')
+
+        if(inputEtaUtente === 'minorenne'){
             prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.2;
-
-        else if (inputEtaUtente === 'over65')
+        }else if(inputEtaUtente  === 'over65'){
             prezzoBiglietto = prezzoBiglietto - prezzoBiglietto * 0.4;
-
+            
+        }
         console.log(`${prezzoBiglietto.toFixed(2)}€`);
-    }
     
-)
+    }
+);
+
 
 
 
