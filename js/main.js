@@ -5,8 +5,7 @@ const btnGenera = document.getElementById('btn-genera');
 
 const prezzoAlKm = 0.21;
 
-btnGenera.addEventListener(
-    'click',
+btnGenera.addEventListener('click',
     function(){
         const inputKm = document.getElementById('km-da-percorrere').value;
         const inputEtaUtente = document.getElementById('fascia-eta').value;
@@ -24,9 +23,11 @@ btnGenera.addEventListener(
             
         }
         console.log(`${prezzoBiglietto.toFixed(2)}€`);
+        document.getElementById('prezzo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
     
     }
 );
+
 
 
 
