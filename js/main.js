@@ -2,12 +2,10 @@
 
 //Dichiarazione variabili
 const btnGenera = document.getElementById('submit');
-
+const stampaBiglietto = document.querySelector(".biglietto-personale")
 // variabile prezzo biglietto a km 
 const prezzoAlKm = 0.21;
 
-// prova variabile a comparsa biglietto 
-let bigliettoPersonale = document.getElementById('biglietto-personale');
 
 // evento del calcolo sul click del bottone 
 btnGenera.addEventListener('click',
@@ -16,6 +14,7 @@ btnGenera.addEventListener('click',
         const inputKm = document.getElementById('km-da-percorrere').value;
         const inputEtaUtente = document.getElementById('fascia-eta').value;
         const inputNomeCognome = document.getElementById('nome-cognome').value;
+        
         let tipoBiglietto = "Biglietto Standard";
 
         // Restituisce un numero intero casuale compreso tra: 
@@ -37,6 +36,7 @@ btnGenera.addEventListener('click',
             tipoBiglietto = "Biglietto piu che adulto";
 
         }
+        stampaBiglietto.classList.add("show");
 
         // visualizzazione su console del biglietto e sullo schermo
         console.log(`${prezzoBiglietto.toFixed(2)}€`);

@@ -13,7 +13,7 @@
     <main>
         <div class="container">
             <h1>calcola il prezzo del tuo biglietto</h1>
-            <form action="/" method="get" class="box-biglietto">
+            <div class="box-biglietto box-calcolo">
                 <div class="row ">
                     <div class="col">
                         <label for="nome-cognome">Nome Cognome</label>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="col">
                         <label for="km">Km da percorrere</label>
-                        <input type="text" id="km-da-percorrere" name="km" value="">
+                        <input type="number" id="km-da-percorrere" name="km" value="">
                     </div>
                     <div class="col">
                         <div>
@@ -38,11 +38,11 @@
                     <button type="submit" id="submit">Genera</button>
                     <button type="reset" id="reset">Annulla</button>
                 </div>
-            </form>
+            </div>
         </div>
         
         </div>
-        <div id="biglietto-personale" class="container">
+        <div class="container biglietto-personale">
             <h1>il tuo biglietto</h1>
             <div class="box-biglietto">
                 <h3>dettaglio passeggeri</h3>

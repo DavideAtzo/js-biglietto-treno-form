@@ -24,12 +24,12 @@ body{
     background-color: white;
 }
 
-form .col{
+.box-calcolo .col{
     width: calc(100% / 3);
     padding: 1.25rem;
     
 }
-form,
+.box-calcolo,
 button{
     color: #bc2a58;
 }
@@ -71,7 +71,7 @@ button{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-#biglietto-personale .box-biglietto{
+.biglietto-personale .box-biglietto{
     padding: .625rem;
 }
 
@@ -85,6 +85,15 @@ button{
     padding: .625rem;
 }
 
-#biglietto-personale .row div:last-child{
+.biglietto-personale .row div:last-child{
     margin-right: 1.25rem;
+}
+
+.biglietto-personale{
+    display: none;
+}
+
+
+.show{
+    display: block;
 }
