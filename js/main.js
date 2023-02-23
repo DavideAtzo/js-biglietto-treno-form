@@ -2,6 +2,7 @@
 
 //Dichiarazione variabili
 const btnGenera = document.getElementById('submit');
+const btnReset = document.getElementById('reset');
 const stampaBiglietto = document.querySelector(".biglietto-personale")
 // variabile prezzo biglietto a km 
 const prezzoAlKm = 0.21;
@@ -36,7 +37,7 @@ btnGenera.addEventListener('click',
             tipoBiglietto = "Biglietto piu che adulto";
 
         }
-        stampaBiglietto.classList.add("show");
+        stampaBiglietto.classList.remove("biglietto-personale");
 
         // visualizzazione su console del biglietto e sullo schermo
         console.log(`${prezzoBiglietto.toFixed(2)}€`);
@@ -49,3 +50,9 @@ btnGenera.addEventListener('click',
     }
 );
 
+
+btnReset.addEventListener('click', 
+function(){
+    stampaBiglietto.classList.add("biglietto-personale");
+    
+})
